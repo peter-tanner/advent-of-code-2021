@@ -67,8 +67,8 @@ LIST *read_file(char *path)
 
 char common_value(LIST *list, char index)
 {
-    uint one = 0;
-    uint zero = 0;
+    unsigned int one = 0;
+    unsigned int zero = 0;
     for (size_t i = 0; i < list->size; i++)
     {
         if (list->list[i][index] - '0')

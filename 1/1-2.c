@@ -8,8 +8,8 @@
 
 typedef struct
 {
-    uint sum;
-    uint count;
+    unsigned int sum;
+    unsigned int count;
     bool written; // IGNORE COMPARISONS AT THE START.
 } MEASUREMENT_WINDOW;
 
@@ -17,14 +17,14 @@ int main(int argc, char const *argv[])
 {
     FILE *p_file = fopen("input", "r");
     char line[50];
-    uint increases = 0;
+    unsigned int increases = 0;
 
     MEASUREMENT_WINDOW windows[N_WINDOWS];
 
-    uint i = 0;
+    unsigned int i = 0;
     while (fgets(line, sizeof line, p_file) != NULL)
     {
-        uint n = atoi(line);
+        unsigned int n = atoi(line);
         // UPDATE MEASURING WINDOWS
         for (size_t j = 0; j < N_WINDOWS; j++)
         {

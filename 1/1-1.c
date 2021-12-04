@@ -6,8 +6,8 @@ int main(int argc, char const *argv[])
 {
     FILE *p_file = fopen("input", "r");
     char line[50];
-    uint increases = 0;
-    uint previous_depth = 0;
+    unsigned int increases = 0;
+    unsigned int previous_depth = 0;
     while (fgets(line, sizeof line, p_file) != NULL)
     {
         if (atoi(line) > previous_depth)
