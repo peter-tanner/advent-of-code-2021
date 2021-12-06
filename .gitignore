@@ -5,3 +5,4 @@
 *.out
 *.swp
 .vscode/
+.gdb_history
